@@ -2,3 +2,26 @@
 # royalambassador.key provided by Rebel.ca (Web Hosting company for obtaining SSL)
 sudo openssl req -new -newkey rsa:2048 -nodes -keyout royalambassador.key -out royalambassador.csr
 
+# Now Enter the company info that have to match the info entered on Rebel.ca to generate the Key:
+# Common Name: www.royalambassador.ca
+# Organization: Royal Ambassador Event Centre Inc
+# Organization Unit: 
+# Country: CA
+# Region: Ontario
+# Locality: Caledon
+# Email: john@royalambassador.ca
+# Key Length: 2048
+# Postcode: L7C 2Z1
+
+# The input has to be royalambassador.key
+# The output will be royalambassador.csr
+# Once the output csr is generated send it on Rebel.ca for GlobalSign to authorize and generate the SSL Certificate (Few days to wait) 
+# and you will receive the files: 
+# X509.cert, ROOT.cert, INTER.cert, PKCS7.cert
+
+# use X509.cert and rename it www_royalambassador.crt
+# if needed use INTER.cert and rename it www_royalambassador_int.crt
+# you already have the file: www_royalambassador.key (obtained online to generate the csr file)
+# you already have the file: www_royalambassador.csr generate on apache from the above key
+# now you have everything you need to install SSL after putting these files in the relevant folder:
+
