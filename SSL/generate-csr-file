@@ -19,9 +19,9 @@ sudo openssl req -new -newkey rsa:2048 -nodes -keyout royalambassador.key -out r
 # and you will receive the files: 
 # X509.cert, ROOT.cert, INTER.cert, PKCS7.cert
 
-# use X509.cert and rename it www_royalambassador.crt
-# if needed use INTER.cert and rename it www_royalambassador_int.crt
-# you already have the file: www_royalambassador.key (obtained online to generate the csr file)
-# you already have the file: www_royalambassador.csr generate on apache from the above key
+# use X509.cert and rename it www_royalambassador_ca.crt
+# if needed use INTER.cert and rename it www_royalambassador_ca_int.crt
+# you already have the file: www_royalambassador_ca.key (obtained online to generate the csr file)
+# you already have the file: www_royalambassador_ca.csr generate on apache from the above key
 # now you have everything you need to install SSL after putting these files in the relevant folder:
 
