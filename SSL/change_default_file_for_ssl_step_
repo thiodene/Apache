@@ -1,0 +1,12 @@
+# Create an domain name file for SSL configuration in sites-available
+# Use the provided file named royalambassador.ca_ssl
+/etc/apache2/sites-available/royalambassador.ca
+
+# initial default file in sites-available will be untouched
+/etc/apache2/sites-available/default
+
+# link royalambassador.ca from sites-available to sites-enabled
+sudo ln -s /etc/apache2/sites-available/royalambassador.ca /etc/apache2/sites-enabled/.
+
+# Rename or Link default file to 000-default in sites-enabled
+sudo ln -s /etc/apache2/sites-available/default /etc/apache2/sites-enabled/000-default
