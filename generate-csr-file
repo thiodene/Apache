@@ -1,0 +1,4 @@
+# How to generate a CSR file:
+# royalambassador.key provided by Rebel.ca (Web Hosting company for obtaining SSL)
+sudo openssl req -new -newkey rsa:2048 -nodes -keyout royalambassador.key -out royalambassador.csr
+
