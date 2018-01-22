@@ -2,7 +2,7 @@
 # Verfiy that a certificate was signed by a CA (Verify that Intermediate CRT and domain CRT are related)
 openssl verify -verbose -CAFile www_royalambassador_ca_int.crt www_royalambassador.ca.crt
 
-# Verifi PK, CSR and CRT are matching each other
+# Verify PK, CSR and CRT are matching each other
 # All the outputs have to be the same for relationship between PK, CSR and CRT
 openssl rsa -noout -modulus -in www_royalambassador_ca.key
 openssl x509 -noout -modulus -in www_royalambassador_ca.crt
