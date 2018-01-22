@@ -1,0 +1,22 @@
+How do I generate a CSR Key file?
+
+If your domain is hosted on our Rebel server you can obtain the CSR key by following these steps:
+
+Step 1.
+Login to your Rebel account and click Hosting Manager.
+
+Step 2.
+Click the green button that reads Control Panel. This will open the Hosting OS in a new tab.
+
+Step 3.
+Under Sections click SSL then click CSR.
+
+Step 4.
+Complete your organizational details then click Generate. (view picture)
+Generate will give you a key that will be renamed www_royalambassador.key (useful also at the end while generating the SSL certificate)
+
+If your domain is not hosted with Rebel you will need to contact 
+your hosting service provider so that they can provide you with the CSR key for your website.
+
+-----------------------------------------------------------------------------------------------------
+From this key go to Apache to generate the SSL CSR file
