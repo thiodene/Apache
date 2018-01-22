@@ -1,0 +1,10 @@
+<VirtualHost *:443>
+ServerName royalambassador.ca 
+ServerAlias www.royalamabassador.ca
+DocumentRoot /var/www/
+SSLEngine On
+#SSLCipherSuite HIGH:+MEDIUM:!SSLv2:!EXP:!ADH:!aNULL:!eNULL:!NULL
+SSLCertificateFile /etc/apache2/ssl/www_royalambassador_ca.crt
+SSLCertificateKeyFile /etc/apache2/ssl/www_royalambassador_ca.key
+SSLCertificateChainFile /etc/apache2/ssl/www_royalambassador_ca_int.crt
+</VirtualHost>
