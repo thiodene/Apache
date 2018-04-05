@@ -1,0 +1,19 @@
+# For the domain name azarbodplus.com
+
+sudo openssl req -new -newkey rsa:2048 -nodes -keyout www_azarbodplus_com.key -out www_azarbodplus_com.csr
+
+# Prompt questions:
+Country Name: CA
+State or Province: Ontario
+Locality (City): Toronto
+Organization Name: Azarbod Inc.
+Organization Name:
+Common Name: www.azarbodplus.com
+Email: ***email***@yahoo.com
+
+A Challenge Password: ***password***
+An Optional Company Name: ***company-name***
+
+# Output
+www.azarbodplus_com.key
+www.azarbodplus_com.csr
