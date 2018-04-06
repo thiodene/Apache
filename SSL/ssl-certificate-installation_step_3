@@ -4,9 +4,9 @@ openssl verify -verbose -CAFile www_royalambassador_ca_int.crt www_royalambassad
 
 # Verify PK, CSR and CRT are matching each other
 # All the outputs have to be the same for relationship between PK, CSR and CRT
-openssl rsa -noout -modulus -in www_royalambassador_ca.key
-openssl x509 -noout -modulus -in www_royalambassador_ca.crt
-openssl req -noout -modulus -in www_royalambassador_ca.csr
+sudo openssl rsa -noout -modulus -in www_royalambassador_ca.key
+sudo openssl x509 -noout -modulus -in www_royalambassador_ca.crt
+sudo openssl req -noout -modulus -in www_royalambassador_ca.csr
 
 # Install SSL after verifications
 # disconnect SSL
