@@ -1,6 +1,6 @@
 # SSL Certificate Installation
 # Verfiy that a certificate was signed by a CA (Verify that Intermediate CRT and domain CRT are related)
-openssl verify -verbose -CAFile www_royalambassador_ca_int.crt www_royalambassador.ca.crt
+openssl verify -verbose -CAFile www_royalambassador_ca_int.crt www_royalambassador_ca.crt
 
 # Verify PK, CSR and CRT are matching each other
 # All the outputs have to be the same for relationship between PK, CSR and CRT
