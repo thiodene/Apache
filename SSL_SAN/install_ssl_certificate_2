@@ -1,2 +1,10 @@
 # For Apache, visit the website:
 # https://ca.godaddy.com/help/install-ssl-certificates-16623
+
+# Verify all files are related Intermediate and x509
+openssl verify -verbose -CAFile www_azarbodplus_com_int.crt www_azarbodplus_com.crt
+
+# Running these commands should show same Output
+sudo openssl rsa -noout -modulus -in www_azarbodplus_com.key
+sudo openssl x509 -noout -modulus -in www_azarbodplus_com.cst
+sudo openssl req -noout -modulus -in www_azarbodplus_com.csr
