@@ -1,0 +1,29 @@
+# Verify domain ownership (HTML or DNS)
+# If needed, also change the .htaccess file an htaccess_http 
+# (to validate a domain name -> no https and no redirect to www in .htaccess)
+
+You will receive an email from us with a unique identifier, which will be in a line of the email: 
+"Your unique ID for these methods is [uniqueID]."
+
+    1. Use an app like Notepad or TextEdit to create a file named starfield.html.
+   
+    2. Copy your unique ID, and only your unique ID, into the file. For example, if your unique ID was 12345, 
+    the content of your new .html file would be: 12345
+    
+    3. Create a directory named "/.well-known/pki-validation/" in the highest-level directory of the website for the common name you're using. 
+    Usually, this is the website's root directory - for example, a directory named coolexample.com. For more info, 
+    see What is my website's root directory?. 
+    Note: If you are running a Windows server, 
+    you will have to name the folder /.well-known./ instead of /.well-known/, 
+    or your server won't let you create the folder.
+    
+    4. Place the new .html file in the pki-validation directory. 
+    For example, after you place the file at that location, 
+    the file's URL would be http://coolexample.com/.well-known/pki-validation/starfield.html.
+    
+    5. Verify that you can access starfield.html in a web browser, 
+    and then use the instructions in the To Verify Your Domain Name Ownership section of this article.
+
+If the SSL certificate is for the root domain, the HTML file must be findable at 
+http://coolexample.com/.well-known/pki-validation/starfield.html. 
+http://www.coolexample.com/.well-known/pki-validation/starfield.html will not work. 
