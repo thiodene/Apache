@@ -1,0 +1,19 @@
+# Create folder ssl/ in /etc/apache2/ Upload the SSL certificate related files in:/etc/apache2/ssl/
+# There should be 4 files, while only 3 are needed to install SSL 2 .crt, 1 .key
+www_azarbodplus_com.csr
+www_azarbodplus_com.crt
+www_azarbodplus_com.key
+www_azarbodplus_com_int.crt
+
+# Create folder vhost/ inside the /etc/apache2/ssl/ folder and 
+sudo mkdir /etc/apache2/ssl/vhost/
+
+# Inside of vhost/ folder create the file mapletools.conf (Provided!)
+sudo vi mapletools.conf
+# Save the file after changes
+[ESC] + ZZ
+
+# Go to sites-enabled and create a link of the SSL dedicated .conf file in this folder
+sudo ln -s ../sites-available/default-ssl.conf
+
+# Edit the 
