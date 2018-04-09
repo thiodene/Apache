@@ -9,7 +9,7 @@ sudo openssl rsa -noout -modulus -in www_azarbodplus_com.key
 sudo openssl x509 -noout -modulus -in www_azarbodplus_com.cst
 sudo openssl req -noout -modulus -in www_azarbodplus_com.csr
 
-# Verify the default-ssl.conf file is OK
+# Verify the donfiguration files default-ssl.conf and 000-default.conf are OK
 sudo apachectl configtest
 sudo apachectl stop
 sudo apachectl start
