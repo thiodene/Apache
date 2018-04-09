@@ -16,4 +16,9 @@ sudo vi mapletools.conf
 # Go to sites-enabled and create a link of the SSL dedicated .conf file in this folder
 sudo ln -s ../sites-available/default-ssl.conf
 
-# Edit the 
+# Edit the default-ssl.conf (For multiple SSL installation from one IP or a one-by-one installtion for all domains)
+# Multiple installation from one IP might not work, so do the installation one domain by one!
+# Files provided: 
+default-ssl_single.conf, default-ssl_multiple.conf
+
+# Once the files have been endited and saved Install SSL with Apache....
