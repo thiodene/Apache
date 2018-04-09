@@ -8,3 +8,20 @@ openssl verify -verbose -CAFile www_azarbodplus_com_int.crt www_azarbodplus_com.
 sudo openssl rsa -noout -modulus -in www_azarbodplus_com.key
 sudo openssl x509 -noout -modulus -in www_azarbodplus_com.cst
 sudo openssl req -noout -modulus -in www_azarbodplus_com.csr
+
+# Verify the default-ssl.conf file is OK
+sudo apachectl configtest
+sudo apachectl stop
+sudo apachectl start
+
+# Install SSL after verifications
+# disconnect SSL
+sudo a2dismod ssl
+# restart Apache2
+sudo servce apache2 restart
+# reconnect SSL
+sudo a2enmod ssl
+# restart Apache2
+sudo servce apache2 restart
+
+# Check now the webistes https: extension to see if it is working
