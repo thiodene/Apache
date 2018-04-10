@@ -2,3 +2,6 @@
 # Multi-Domain Certificates, also called SAN certificates, offer complete control over the Subject Alternative Name field. 
 # These certificates are ideal for securing multiple names across different domains and subdomains (e.g., Exchange/OCS environments). 
 # You also have the option to add, change, and delete any of the SANs on the fly to reflect the evolving needs of your network.
+
+# Check SSL Installation Tool
+https://www.digicert.com/help/
