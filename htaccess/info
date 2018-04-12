@@ -1,3 +1,6 @@
 - Redirection from http to https examples
 - Redirection from http://www.theroyalambassador.com/about-us.php to http://www.theroyalambassador.com/about/about-us (no more .php)
 - Redirection...
+
+# Source 1
+https://stackoverflow.com/questions/13843166/how-to-display-one-site-or-page-but-show-different-url-using-htaccess
