@@ -7,3 +7,7 @@ https://stackoverflow.com/questions/13843166/how-to-display-one-site-or-page-but
 
 # Source 2: Rewrite URLs with mod_rewrite for Apache on Ubuntu 16
 https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04
+
+# Source 3: Test mod_rewrite on Apache and htaccess
+https://docs.bolt.cm/3.4/howto/making-sure-htaccess-works
+https://httpd.apache.org/docs/2.4/rewrite/remapping.html
