@@ -4,3 +4,6 @@
 
 # Source 1
 https://stackoverflow.com/questions/13843166/how-to-display-one-site-or-page-but-show-different-url-using-htaccess
+
+# Source 2: Rewrite URLs with mod_rewrite for Apache on Ubuntu 16
+https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04
