@@ -1,0 +1,11 @@
+<FilesMatch ".less$">
+  Header set Cache-Control "no-cache"
+</FilesMatch>
+
+# For .htc files
+#AddType text/x-component .htc
+
+# Just for IE
+#RewriteCond %{REQUEST_URI} !^/pie/PIE\.htc [NC]
+#RewriteCond %{REQUEST_URI} PIE\.htc [NC]
+#RewriteRule (.*) http://%{HTTP_HOST}/pie/PIE.htc [R=301,L]
