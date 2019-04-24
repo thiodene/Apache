@@ -19,3 +19,9 @@ sudo vi /etc/apache2/sites-enabled/000-default.conf
 # restart Apache
 sudo service apache2 restart
 
+# Now by typing
+netstat -lnp
+# 80 port should show:
+0.0.0.0: 80 
+# instead of
+:::80
