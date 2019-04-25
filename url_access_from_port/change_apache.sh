@@ -12,7 +12,7 @@ Listen 0.0.0.0:8080
 
 # Then if needed change 000-default.conf
 sudo vi /etc/apache2/sites-enabled/000-default.conf
-<VirtualHost *:8090>
+<VirtualHost *:8080>
 # save the file
 [CTRL] + ZZ
 
