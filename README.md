@@ -1,5 +1,7 @@
 # Apache
 Installation of important web features such as SSL Certificates
 
-Check Apache version:
+## Check Apache version:
 sudo apachectl -V
+## Or
+httpd -v
